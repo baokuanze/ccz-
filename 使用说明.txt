@@ -1,0 +1,24 @@
+
+CCZ Decode File Ver 1.5  
+Copyright by nxjbill001@sohu.com 
+Build at Dec  2 2013
+ccz [-ccz file] [-pvr file] [-crop file] [-plist file] [-cczcrop file] [-pvrcrop file] [-out file]
+exam
+ 1  先将要做的png和plis文件拖到这个目录下
+2 在cd 进入这个目录下就可以了
+You can copy this execute to /usr/sbin/ as the follow command
+  sudo cp ccz /usr/sbin/ 将工具拷到系统盘 //必须要做的
+
+就是打开 终端 输入例子中的命令来进行操作
+ ccz -net     //查看自己电脑的mac地址
+  ccz -ccz abc.pvr.ccz 解压abc.pvr.ccz 为abc.pvr
+  ccz -ccz abc.pvr.ccz -out xxx.pvr  解压abc.pvr.ccz到输出文件名
+  ccz -pvr abc.pvr 解压abc.pvr为abc.png
+  ccz -crop abc.png 按abc.plist中图元配置裁剪abc.png为多个小图
+  ccz -cczcrop abc.ccz 按abc.plist中图元配置裁剪abc.ccz为多个小图
+  ccz -pvrcrop abc.pvr 按abc.plist中图元配置裁剪abc.pvr为多个小图 
+
+使用步骤:
+先将工具拷到系统盘,使用终端运行:sudo cp ccz /usr/sbin/ 
+然后运行例子汇总的命令就可以了,需要在文件的当前文件夹下面运行
+
